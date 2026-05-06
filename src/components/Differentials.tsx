@@ -3,19 +3,19 @@ import { CheckCircle2 } from 'lucide-react';
 const items = [
   {
     title: 'Atendimento exclusivo e personalizado',
-    desc: 'Cada cliente e tratado como unico, com estrategias desenhadas sob medida para suas necessidades.',
+    desc: 'Cada cliente é tratado como único, com estratégias desenhadas sob medida para suas necessidades.',
   },
   {
-    title: 'Equipe multidisciplinar de alto nivel',
-    desc: 'Advogados especializados em diversas areas do direito trabalhando de forma integrada.',
+    title: 'Equipe multidisciplinar de alto nível',
+    desc: 'Advogados especializados em diversas áreas do direito trabalhando de forma integrada.',
   },
   {
-    title: 'Transparencia total em honorarios',
-    desc: 'Proposta clara e detalhada antes do inicio de qualquer trabalho, sem surpresas.',
+    title: 'Transparência total em honorários',
+    desc: 'Proposta clara e detalhada antes do início de qualquer trabalho, sem surpresas.',
   },
   {
-    title: 'Atuacao preventiva e estrategica',
-    desc: 'Foco em evitar problemas antes que eles surjam, protegendo seu patrimonio de forma proativa.',
+    title: 'Atuação preventiva e estratégica',
+    desc: 'Foco em evitar problemas antes que eles surjam, protegendo seu patrimônio de forma proativa.',
   },
 ];
 

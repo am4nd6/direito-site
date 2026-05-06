@@ -12,7 +12,7 @@ export default function Footer() {
               <span className="font-serif text-lg tracking-wider text-accent-foreground">CASTILHO & ASSOCIADOS</span>
             </div>
             <p className="text-sm text-accent-foreground/50 font-sans leading-relaxed">
-              Advocacia de excelencia com foco em resultados. Seguranca juridica para pessoas e empresas.
+              Advocacia de excelência com foco em resultados. Segurança jurídica para pessoas e empresas.
             </p>
           </div>
 
@@ -22,7 +22,7 @@ export default function Footer() {
             <div className="space-y-3">
               <div className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 text-gold flex-shrink-0 mt-0.5" />
-                <span className="text-sm text-accent-foreground/60 font-sans">Av. Paulista, 1578, Sala 1204 Sao Paulo - SP</span>
+                <span className="text-sm text-accent-foreground/60 font-sans">Av. Paulista, 1578, Sala 1204 São Paulo - SP</span>
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="w-4 h-4 text-gold flex-shrink-0" />
@@ -37,17 +37,17 @@ export default function Footer() {
 
           {/* Hours */}
           <div>
-            <h4 className="font-serif text-sm tracking-widest uppercase text-gold mb-4">Horario</h4>
+            <h4 className="font-serif text-sm tracking-widest uppercase text-gold mb-4">Horário</h4>
             <div className="space-y-2 text-sm text-accent-foreground/60 font-sans">
               <p>Segunda a Sexta: 9h - 18h</p>
-              <p>Sabado: 9h - 13h (agendamento)</p>
+              <p>Sábado: 9h - 13h (agendamento)</p>
             </div>
           </div>
         </div>
 
         <div className="mt-12 pt-6 border-t border-accent-foreground/10 text-center">
           <p className="text-xs text-accent-foreground/40 font-sans tracking-wide">
-            2024 Castilho & Associados. Todos os direitos reservados. OAB/SP 12345.
+            2026 Castilho & Associados. Todos os direitos reservados. OAB/SP 12345.
           </p>
         </div>
       </div>

@@ -4,37 +4,37 @@ const areas = [
   {
     icon: Briefcase,
     title: 'Direito Empresarial',
-    problem: 'Contratos frageis e riscos societarios',
-    benefit: 'Estruturacao juridica solida para crescer com seguranca',
+    problem: 'Contratos frágeis e riscos societários',
+    benefit: 'Estruturação jurídica solida para crescer com segurança',
   },
   {
     icon: Building2,
-    title: 'Direito Imobiliario',
-    problem: 'Transacoes vulneraveis e disputas patrimoniais',
-    benefit: 'Protecao total em compra, venda e locacao de imoveis',
+    title: 'Direito Imobiliário',
+    problem: 'Transações vulneráveis e disputas patrimoniais',
+    benefit: 'Proteção total em compra, venda e locação de imóveis',
   },
   {
     icon: Shield,
     title: 'Direito Civil',
     problem: 'Conflitos contratuais e responsabilidade civil',
-    benefit: 'Resolucao eficiente de disputas com foco em resultado',
+    benefit: 'Resolução eficiente de disputas com foco em resultado',
   },
   {
     icon: Users,
-    title: 'Direito de Familia',
-    problem: 'Decisoes delicadas que afetam o futuro da familia',
-    benefit: 'Orientacao humana e estrategica em momentos criticos',
+    title: 'Direito de Família',
+    problem: 'Decisões delicadas que afetam o futuro da família',
+    benefit: 'Orientação humana e estratégica em momentos críticos',
   },
   {
     icon: FileText,
     title: 'Direito Trabalhista',
-    problem: 'Passivos ocultos e relacoes de trabalho inseguras',
-    benefit: 'Prevencao de riscos e defesa de direitos trabalhistas',
+    problem: 'Passivos ocultos e relações de trabalho inseguras',
+    benefit: 'Prevenção de riscos e defesa de direitos trabalhistas',
   },
   {
     icon: Landmark,
-    title: 'Direito Tributario',
-    problem: 'Carga tributaria excessiva e autuacoes fiscais',
+    title: 'Direito Tributário',
+    problem: 'Carga tributária excessiva e autuações fiscais',
     benefit: 'Planejamento fiscal inteligente e defesa administrativa',
   },
 ];
@@ -46,7 +46,7 @@ export default function PracticeAreas() {
         <div className="text-center mb-12 md:mb-16 fade-in-up">
           <span className="text-xs tracking-[0.3em] uppercase text-gold font-sans">Expertise</span>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif text-foreground mt-3">
-            Areas de Atuacao
+            Áreas de Atuação
           </h2>
           <div className="w-12 h-px bg-gold mx-auto mt-4" />
         </div>

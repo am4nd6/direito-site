@@ -6,10 +6,10 @@ import team3 from '@/assets/team-3.jpg';
 import team4 from '@/assets/team-4.jpg';
 
 const team = [
-  { name: 'Ricardo Castilho', role: 'Direito Empresarial e Societario', image: team1 },
-  { name: 'Mariana Oliveira', role: 'Direito Civil e Imobiliario', image: team2 },
-  { name: 'Eduardo Mendes', role: 'Direito Tributario', image: team3 },
-  { name: 'Isabela Santos', role: 'Direito de Familia e Sucessoes', image: team4 },
+  { name: 'Ricardo Castilho', role: 'Direito Empresarial e Societário', image: team1 },
+  { name: 'Mariana Oliveira', role: 'Direito Civil e Imobiliário', image: team2 },
+  { name: 'Eduardo Mendes', role: 'Direito Tributário', image: team3 },
+  { name: 'Isabela Santos', role: 'Direito de Família e Sucessões', image: team4 },
 ];
 
 export default function TeamSection() {

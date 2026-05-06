@@ -11,13 +11,13 @@ export default function AboutSection() {
 
           <div className="space-y-5 text-muted-foreground font-sans leading-relaxed text-sm md:text-base">
             <p>
-              O Castilho & Associados nasceu da conviccao de que a advocacia de excelencia exige mais do que conhecimento tecnico: demanda compromisso genuino com cada causa e cada cliente.
+              O Castilho & Associados nasceu da convicção de que a advocacia de excelência exige mais do que conhecimento técnico: demanda compromisso genuíno com cada causa e cada cliente.
             </p>
             <p>
-              Fundado em 2009, o escritorio se consolidou como referencia em atuacao estrategica nas areas civel, empresarial, imobiliaria e de familia, atendendo desde pessoas fisicas ate grupos empresariais de grande porte.
+              Fundado em 2009, o escritório se consolidou como referência em atuação estratégica nas áreas civel, empresarial, imobiliária e de família, atendendo desde pessoas físicas até grupos empresariais de grande porte.
             </p>
             <p>
-              Nossa abordagem combina rigor academico, experiencia pratica e uma visao integrada do direito, sempre orientada para resultados concretos e duradouros. Acreditamos que a confianca se constroi com transparencia, dedicacao e resultados.
+              Nossa abordagem combina rigor acadêmico, experiência prática e uma visão integrada do direito, sempre orientada para resultados concretos e duradouros. Acreditamos que a confiança se constroi com transparência, dedicação e resultados.
             </p>
           </div>
         </div>

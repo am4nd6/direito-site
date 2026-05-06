@@ -1,4 +1,4 @@
-import heroImg from '@/assets/hero-justice.jpg';
+import heroImg from '@/assets/hero-justice.png';
 
 export default function HeroSection() {
   const scrollTo = (id: string) => {
@@ -24,10 +24,10 @@ export default function HeroSection() {
         <div className="max-w-2xl">
           <div className="w-16 h-px bg-gold mb-8" />
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif leading-tight text-accent-foreground mb-6">
-            Seguranca juridica para decisoes que transformam
+            Segurança jurídica para decisões que transformam
           </h1>
           <p className="text-base md:text-lg text-accent-foreground/70 font-sans leading-relaxed mb-10 max-w-lg">
-            Atuacao estrategica e personalizada para proteger seu patrimonio, seus direitos e o futuro do seu negocio.
+            Atuação estratégica e personalizada para proteger seu patrimônio, seus direitos e o futuro do seu negócio.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <button
@@ -49,8 +49,8 @@ export default function HeroSection() {
         <div className="mt-16 md:mt-24 grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 border-t border-accent-foreground/10 pt-8">
           {[
             { value: '500+', label: 'Casos resolvidos' },
-            { value: '98%', label: 'Satisfacao' },
-            { value: '15+', label: 'Anos de atuacao' },
+            { value: '98%', label: 'Satisfação' },
+            { value: '15+', label: 'Anos de atuação' },
             { value: '4', label: 'Especialidades' },
           ].map((stat) => (
             <div key={stat.label}>
