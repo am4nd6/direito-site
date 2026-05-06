@@ -14,7 +14,7 @@ export default function HeroSection() {
           alt="Estatua da Justica"
           width={1920}
           height={1080}
-          className="w-full h-full object-cover object-center"
+          className="w-full h-full object-cover object-[88%_center] md:object-center"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/75 to-primary/50" />
       </div>
@@ -40,7 +40,7 @@ export default function HeroSection() {
               onClick={() => scrollTo('#areas')}
               className="px-8 py-4 border border-accent-foreground/30 text-accent-foreground text-sm tracking-widest uppercase hover:border-gold hover:text-gold transition-all duration-300"
             >
-              Conhecer Areas
+              Conhecer Áreas
             </button>
           </div>
         </div>
