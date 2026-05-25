@@ -5,7 +5,7 @@ const areas = [
     icon: Briefcase,
     title: 'Direito Empresarial',
     problem: 'Contratos frágeis e riscos societários',
-    benefit: 'Estruturação jurídica solida para crescer com segurança',
+    benefit: 'Estruturação jurídica sólida para crescer com segurança',
   },
   {
     icon: Building2,

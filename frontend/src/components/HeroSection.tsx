@@ -26,7 +26,7 @@ export default function HeroSection() {
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif leading-tight text-accent-foreground mb-6">
             Segurança jurídica para decisões que transformam
           </h1>
-          <p className="text-base md:text-lg text-accent-foreground/70 font-sans leading-relaxed mb-10 max-w-lg">
+          <p className="text-base md:text-lg text-accent-foreground/70 font-sans leading-relaxed mb-10 max-w-lg md:text-justify">
             Atuação estratégica e personalizada para proteger seu patrimônio, seus direitos e o futuro do seu negócio.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">

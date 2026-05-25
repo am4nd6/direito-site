@@ -9,13 +9,15 @@ export default function AboutSection() {
           </h2>
           <div className="w-12 h-px bg-gold mb-8" />
 
-          <div className="space-y-5 text-muted-foreground font-sans leading-relaxed text-sm md:text-base">
+          <div className="space-y-5 text-muted-foreground font-sans leading-relaxed text-sm md:text-base text-justify">
             <p>
               O Castilho & Associados nasceu da convicção de que a advocacia de excelência exige mais do que conhecimento técnico: demanda compromisso genuíno com cada causa e cada cliente.
             </p>
+
             <p>
               Fundado em 2009, o escritório se consolidou como referência em atuação estratégica nas áreas civel, empresarial, imobiliária e de família, atendendo desde pessoas físicas até grupos empresariais de grande porte.
             </p>
+
             <p>
               Nossa abordagem combina rigor acadêmico, experiência prática e uma visão integrada do direito, sempre orientada para resultados concretos e duradouros. Acreditamos que a confiança se constroi com transparência, dedicação e resultados.
             </p>

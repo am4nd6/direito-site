@@ -36,8 +36,13 @@ export default function Differentials() {
             <div key={item.title} className="fade-in-up flex gap-4 p-6 border border-border hover:border-gold/30 transition-all duration-500">
               <CheckCircle2 className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" />
               <div>
-                <h3 className="font-serif text-base text-foreground mb-2">{item.title}</h3>
-                <p className="text-sm text-muted-foreground font-sans leading-relaxed">{item.desc}</p>
+                <h3 className="font-serif text-base text-foreground mb-2">
+                  {item.title}
+                </h3>
+
+                <p className="text-sm text-muted-foreground font-sans leading-relaxed md:text-justify">
+                  {item.desc}
+                </p>
               </div>
             </div>
           ))}

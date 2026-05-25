@@ -11,10 +11,10 @@ export default function BalanceSection() {
               Compromisso com a justiça em cada detalhe
             </h2>
             <div className="w-12 h-px bg-gold mb-6" />
-            <p className="text-accent-foreground/70 font-sans leading-relaxed mb-6">
+            <p className="text-accent-foreground/70 font-sans leading-relaxed mb-6 text-justify">
               Com mais de 15 anos de atuação, nosso escritório construiu uma reputação sólida baseada em resultados concretos, ética irrepreensível e dedicação integral a cada cliente.
             </p>
-            <p className="text-accent-foreground/70 font-sans leading-relaxed mb-8">
+            <p className="text-accent-foreground/70 font-sans leading-relaxed mb-8 text-justify">
               Cada caso recebe atenção personalizada de uma equipe multidisciplinar preparada para enfrentar os desafios jurídicos mais complexos do cenário atual.
             </p>
             <div className="flex gap-8">
