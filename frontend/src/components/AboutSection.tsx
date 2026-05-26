@@ -19,7 +19,7 @@ export default function AboutSection() {
             </p>
 
             <p>
-              Nossa abordagem combina rigor acadêmico, experiência prática e uma visão integrada do direito, sempre orientada para resultados concretos e duradouros. Acreditamos que a confiança se constroi com transparência, dedicação e resultados.
+              Nossa abordagem combina rigor acadêmico, experiência prática e uma visão integrada do direito, sempre orientada para resultados concretos e duradouros. Acreditamos que a confiança se constrói com transparência, dedicação e resultados.
             </p>
           </div>
         </div>

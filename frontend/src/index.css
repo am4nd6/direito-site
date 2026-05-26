@@ -51,6 +51,21 @@
     --sidebar-accent-foreground: 240 5.9% 10%;
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* ============================================================
+       HERO IMAGE - Posição e Zoom da Imagem de Fundo
+       ============================================================
+       Altere APENAS os valores abaixo para ajustar a imagem:
+
+       Mobile  (< 768px):   --hero-pos-mobile    (ex: 88% center)
+       Tablet  (768-1023px): --hero-pos-tablet    (ex: 72% center)
+       Desktop (>= 1024px):  --hero-pos-desktop   (ex: center)
+       Zoom no Tablet:       --hero-scale-tablet   (ex: 1.35)
+       ============================================================ */
+    --hero-pos-mobile: 88% center;
+    --hero-pos-tablet: 93% center;
+    --hero-pos-desktop: 88% center;
+    --hero-scale-tablet: 1;
   }
 }
 
@@ -116,5 +131,27 @@
   .fade-in-up.visible {
     opacity: 1;
     transform: translateY(0);
+  }
+
+  /* Hero image: usa as variáveis CSS definidas no :root */
+  .hero-image {
+    object-position: var(--hero-pos-mobile);
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  @media (min-width: 768px) {
+    .hero-image {
+      object-position: var(--hero-pos-tablet);
+      transform: scale(var(--hero-scale-tablet));
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .hero-image {
+      object-position: var(--hero-pos-desktop);
+      transform: none;
+    }
   }
 }

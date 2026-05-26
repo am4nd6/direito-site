@@ -8,13 +8,13 @@ export default function HeroSection() {
   return (
     <section id="hero" className="relative min-h-screen flex items-center">
       {/* Background */}
-      <div className="absolute inset-0">
+      <div className="absolute inset-0 overflow-hidden">
         <img
           src={heroImg}
           alt="Estatua da Justica"
           width={1920}
           height={1080}
-          className="w-full h-full object-cover object-[88%_center] md:object-center"
+          className="hero-image"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/75 to-primary/50" />
       </div>
