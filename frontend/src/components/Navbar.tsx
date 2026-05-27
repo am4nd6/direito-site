@@ -12,16 +12,37 @@ const navLinks = [
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [activeSection, setActiveSection] = useState('#hero');
+  const [clickedItem, setClickedItem] = useState<string | null>(null);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 50);
+    const onScroll = () => {
+      setScrolled(window.scrollY > 50);
+
+      const threshold = Math.max(150, window.innerHeight - 150);
+      let current = '#hero';
+      for (let i = navLinks.length - 1; i >= 0; i--) {
+        const el = document.querySelector(navLinks[i].href);
+        if (el && el.getBoundingClientRect().top <= threshold) {
+          current = navLinks[i].href;
+          break;
+        }
+      }
+      setActiveSection(current);
+    };
+
     window.addEventListener('scroll', onScroll);
+    onScroll();
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
   const handleClick = (href: string) => {
-    setOpen(false);
-    document.querySelector(href)?.scrollIntoView({ behavior: 'smooth' });
+    setClickedItem(href);
+    setTimeout(() => {
+      setClickedItem(null);
+      setOpen(false);
+      document.querySelector(href)?.scrollIntoView({ behavior: 'smooth' });
+    }, 300);
   };
 
   return (
@@ -44,7 +65,9 @@ export default function Navbar() {
             <button
               key={link.href}
               onClick={() => handleClick(link.href)}
-              className="text-sm tracking-widest uppercase text-accent-foreground/80 hover:text-gold transition-colors duration-300"
+              className={`text-sm tracking-widest uppercase transition-colors duration-300 ${
+                activeSection === link.href ? 'text-gold' : 'text-accent-foreground/80 hover:text-gold'
+              }`}
             >
               {link.label}
             </button>
@@ -74,14 +97,18 @@ export default function Navbar() {
             <button
               key={link.href}
               onClick={() => handleClick(link.href)}
-              className="text-left text-sm tracking-widest uppercase text-accent-foreground/80 hover:text-gold py-2 nav-link-mobile menu-item"
+              className={`text-left text-sm tracking-widest uppercase py-2 nav-link-mobile menu-item transition-all duration-300 ${
+                activeSection === link.href ? 'text-gold menu-item-active' : 'text-accent-foreground/80'
+              } ${clickedItem === link.href ? 'menu-item-clicked' : ''}`}
             >
               {link.label}
             </button>
           ))}
           <button
             onClick={() => handleClick('#contato')}
-            className="mt-4 px-8 py-4 w-full bg-gold text-accent-foreground text-sm tracking-widest uppercase font-medium hover:bg-gold-dark btn-cta-premium menu-item"
+            className={`mt-4 px-8 py-4 w-full bg-gold text-accent-foreground text-sm tracking-widest uppercase font-medium hover:bg-gold-dark btn-cta-premium menu-item ${
+              clickedItem === '#contato' ? 'menu-item-clicked' : ''
+            }`}
           >
             Agendar Consulta
           </button>
