@@ -27,7 +27,7 @@ export default function Navbar() {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled ? 'bg-dark/95 backdrop-blur-md shadow-lg' : 'bg-transparent'
+        scrolled || open ? 'bg-dark/95 backdrop-blur-md shadow-lg' : 'bg-transparent'
       }`}
     >
       <div className="max-w-7xl mx-auto px-5 md:px-8 flex items-center justify-between h-16 md:h-20">
@@ -51,7 +51,7 @@ export default function Navbar() {
           ))}
           <button
             onClick={() => handleClick('#contato')}
-            className="ml-4 px-6 py-2.5 border border-gold text-gold text-xs tracking-widest uppercase hover:bg-gold hover:text-accent-foreground transition-all duration-300"
+            className="ml-4 px-8 py-4 bg-gold text-accent-foreground text-sm tracking-widest uppercase font-medium hover:bg-gold-dark transition-all duration-300"
           >
             Agendar Consulta
           </button>
@@ -65,8 +65,8 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       <div
-        className={`lg:hidden overflow-hidden transition-all duration-500 bg-dark/98 backdrop-blur-md ${
-          open ? 'max-h-96' : 'max-h-0'
+        className={`lg:hidden overflow-hidden transition-all duration-500 border-t border-gold/10 bg-transparent ${
+          open ? 'max-h-96 menu-open' : 'max-h-0'
         }`}
       >
         <div className="px-5 py-6 flex flex-col gap-4">
@@ -74,14 +74,14 @@ export default function Navbar() {
             <button
               key={link.href}
               onClick={() => handleClick(link.href)}
-              className="text-left text-sm tracking-widest uppercase text-accent-foreground/80 hover:text-gold transition-colors py-2"
+              className="text-left text-sm tracking-widest uppercase text-accent-foreground/80 hover:text-gold py-2 nav-link-mobile menu-item"
             >
               {link.label}
             </button>
           ))}
           <button
             onClick={() => handleClick('#contato')}
-            className="mt-2 px-6 py-3 border border-gold text-gold text-xs tracking-widest uppercase hover:bg-gold hover:text-accent-foreground transition-all duration-300 w-full"
+            className="mt-4 px-8 py-4 w-full bg-gold text-accent-foreground text-sm tracking-widest uppercase font-medium hover:bg-gold-dark btn-cta-premium menu-item"
           >
             Agendar Consulta
           </button>

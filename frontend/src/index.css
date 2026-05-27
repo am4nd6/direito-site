@@ -115,6 +115,7 @@
   .text-dark {
     color: hsl(var(--dark));
   }
+
 }
 
 @layer components {
@@ -154,4 +155,99 @@
       transform: none;
     }
   }
+}
+
+/* Menu entry animation */
+@keyframes menu-item-in {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.menu-open .menu-item {
+  opacity: 0;
+  animation: menu-item-in 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+.menu-open .menu-item:nth-child(1) { animation-delay: 0.05s; }
+.menu-open .menu-item:nth-child(2) { animation-delay: 0.1s; }
+.menu-open .menu-item:nth-child(3) { animation-delay: 0.15s; }
+.menu-open .menu-item:nth-child(4) { animation-delay: 0.2s; }
+.menu-open .menu-item:nth-child(5) { animation-delay: 0.25s; }
+.menu-open .menu-item:nth-child(6) { animation-delay: 0.3s; }
+
+/* Mobile nav link premium hover */
+.nav-link-mobile {
+  position: relative;
+  transition: all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.nav-link-mobile::after {
+  content: '';
+  position: absolute;
+  bottom: 4px;
+  left: 0;
+  width: 0;
+  height: 1.5px;
+  background: hsl(var(--gold));
+  transition: width 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+@media (hover: hover) {
+  .nav-link-mobile:hover {
+    transform: translateX(6px);
+    text-shadow: 0 0 20px hsl(var(--gold) / 0.3);
+  }
+
+  .nav-link-mobile:hover::after {
+    width: 24px;
+  }
+
+  .btn-cta-premium:hover {
+    transform: translateY(-1px);
+    box-shadow:
+      0 8px 30px hsl(var(--gold) / 0.3),
+      0 0 40px hsl(var(--gold) / 0.12);
+  }
+
+  .btn-cta-premium:hover::before {
+    left: 125%;
+  }
+}
+
+.nav-link-mobile:active {
+  transform: translateX(6px) scale(0.97);
+}
+
+/* Premium CTA button with glow, elevation and shine */
+.btn-cta-premium {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.btn-cta-premium:active {
+  transform: scale(0.97);
+}
+
+.btn-cta-premium::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    hsl(var(--gold) / 0.15),
+    transparent
+  );
+  transform: skewX(-25deg);
+  transition: left 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
